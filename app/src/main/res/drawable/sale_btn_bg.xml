@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="false"
+    android:variablePadding="false">
+    <item
+        android:drawable="@color/sale_btn_not_clicked"
+        android:state_pressed="false"
+        />
+	<item
+        android:drawable="@color/sale_btn_clicked"
+        android:state_pressed="true"
+        />		
+</selector>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+<RelativeLayout 
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- for the name -->
+
+    <TextView
+        android:id="@+id/details_prod_name_tv_l"
+        style="@style/label_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/product_name_l" />
+
+    <TextView
+        android:id="@+id/details_prod_name_tv_v"
+        style="@style/value_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/details_prod_name_tv_l"
+		android:layout_toRightOf="@id/details_prod_name_tv_l"
+        android:layout_alignBaseline="@id/details_prod_name_tv_l"
+         />
+    <!-- for the price -->
+
+    <TextView
+        android:id="@+id/details_prod_price_tv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+        android:layout_below="@id/details_prod_name_tv_l"
+        android:text="@string/price_l"
+        style="@style/label_tv_style"
+        />
+
+    <TextView
+        android:layout_alignBaseline="@id/details_prod_price_tv_l"
+        style="@style/value_tv_style"
+        android:id="@+id/details_prod_price_tv_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_prod_name_tv_v"
+        android:layout_toEndOf="@id/details_prod_price_tv_l"
+		android:layout_toRightOf="@id/details_prod_price_tv_l"/>
+    <!-- for the quantity -->
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_below="@id/details_prod_price_tv_l"
+		android:orientation="horizontal"
+		android:id="@+id/q_container"
+		android:gravity="center">
+
+		    <TextView
+		        android:id="@+id/details_prod_q_tv_l"
+		        style="@style/qlabel_tv_style"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/quantity_l"
+		         />
+		
+		    <TextView
+		        style="@style/q_value_tv_style"
+		        android:id="@+id/details_prod_q_tv_v"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="3 items" 
+		        android:layout_margin="0dp"/>
+		    <LinearLayout android:layout_width="wrap_content"
+		         android:layout_height="match_parent"
+		         android:gravity="center"
+		         android:orientation="vertical"
+				android:layout_marginStart="10dp"
+				android:layout_marginLeft="10dp"
+		        >
+				        <Button android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="+"
+				            android:id="@+id/details_plusBtn"
+				            ></Button>
+				        <Button android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="-"
+				            android:id="@+id/details_minusBtn"
+				            ></Button>
+		    </LinearLayout>
+    </LinearLayout>
+    <!-- for the suplier name -->
+
+    <TextView
+        style="@style/label_tv_style"
+        android:id="@+id/details_prod_s_name_tv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/q_container"
+        android:text="@string/supplier_name_l" />
+
+    <TextView
+        android:layout_alignBaseline="@id/details_prod_s_name_tv_l"
+        style="@style/value_tv_style"
+        android:id="@+id/details_prod_s_name_tv_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_container"
+        android:layout_toEndOf="@id/details_prod_s_name_tv_l"
+		android:layout_toRightOf="@id/details_prod_s_name_tv_l"/>
+    <!-- for the supplier phone -->
+
+    <TextView
+       	style="@style/label_tv_style"
+        android:id="@+id/details_prod_s_phone_tv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/details_prod_s_name_tv_l"
+        android:text="@string/supplier_phone_l" />
+
+    <TextView
+        android:layout_alignBaseline="@id/details_prod_s_phone_tv_l"
+        style="@style/value_tv_style"
+        android:id="@+id/details_prod_s_phone_tv_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_prod_s_name_tv_v"
+        android:layout_toEndOf="@id/details_prod_s_phone_tv_l"
+        android:layout_toRightOf="@id/details_prod_s_phone_tv_l" />
+    <!-- buttons -->
+    <Button 
+		android:layout_below="@id/details_prod_s_phone_tv_l"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_btn"
+        android:id="@+id/details_edit_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/layout_horizontal_margin"
+        android:padding="@dimen/btn_padding"/>
+
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_order_btn"
+        android:id="@+id/details_order_btn"
+        android:layout_margin="@dimen/layout_horizontal_margin"
+        android:layout_toEndOf="@id/details_edit_btn"
+		android:layout_toRightOf="@id/details_edit_btn"
+        android:padding="@dimen/btn_padding"
+		android:layout_alignBaseline="@id/details_edit_btn"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_btn"
+        android:id="@+id/details_delete_btn"
+        android:layout_margin="@dimen/layout_horizontal_margin"
+        android:layout_toEndOf="@id/details_order_btn"
+		android:layout_toRightOf="@id/details_order_btn"
+        android:padding="@dimen/btn_padding"
+		android:layout_alignBaseline="@id/details_edit_btn"/>
+    
+
+</RelativeLayout>
+</ScrollView>

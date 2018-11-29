@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- for the name -->
+
+    <TextView
+        android:id="@+id/add_prod_name_tv_l"
+        style="@style/label_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:text="@string/product_name_l" />
+
+	<EditText
+		android:id="@+id/add_prod_name_et_v"
+		style="@style/value_tv_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/add_prod_name_tv_l"
+		android:layout_toEndOf="@id/add_prod_name_tv_l"
+		android:layout_toRightOf="@id/add_prod_name_tv_l"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:hint="@string/some_name"
+		android:inputType="text" />
+
+    <!-- for the price -->
+
+    <TextView
+        android:id="@+id/add_prod_price_tv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/add_prod_name_tv_l"
+        style="@style/label_tv_style"
+        android:text="@string/price"
+        />
+
+	<TextView
+		android:id="@+id/add_curruncy_symbole"
+		style="@style/value_tv_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/add_prod_price_et_v"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:text="@string/currency_symbole"
+		android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/add_prod_price_et_v"
+        style="@style/value_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/add_prod_price_tv_l"
+        android:layout_below="@id/add_prod_name_et_v"
+        android:layout_toEndOf="@id/add_prod_price_tv_l"
+		android:layout_toStartOf="@id/add_curruncy_symbole"
+		android:layout_toRightOf="@id/add_prod_price_tv_l"
+		android:layout_toLeftOf="@id/add_curruncy_symbole"
+		android:hint="@string/_7"
+        android:inputType="numberDecimal" />
+
+    <!-- for the quantity -->
+	    <TextView
+	        style="@style/label_tv_style"
+	        android:id="@+id/add_prod_q_tv_l"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_below="@id/add_prod_price_tv_l"
+	        android:text="@string/quantity_l"/>
+
+		<TextView
+		    style="@style/value_tv_style"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@id/add_prod_q_tv_l"
+		    android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+		    android:text="@string/items_word"
+			android:id="@+id/add_items_w"/>
+		<EditText
+			android:id="@+id/add_prod_q_et_v"
+			style="@style/value_tv_style"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@id/add_prod_q_tv_l"
+			android:layout_below="@id/add_prod_price_et_v"
+			android:layout_marginTop="40dp"
+			android:layout_toEndOf="@id/add_prod_q_tv_l"
+			android:layout_toStartOf="@id/add_items_w"
+			android:layout_toRightOf="@id/add_prod_q_tv_l"
+			android:layout_toLeftOf="@id/add_items_w"
+			android:hint="@string/_7"
+			android:inputType="number" />
+
+
+	<!-- for the suplier name -->
+
+	    <TextView
+	        style="@style/label_tv_style"
+	        android:id="@+id/add_prod_s_name_tv_l"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+	        android:layout_below="@id/add_prod_q_tv_l"
+	        android:text="@string/supplier_name_l" />
+	
+	    <EditText
+	        android:id="@+id/add_prod_s_name_et_v"
+	        style="@style/value_tv_style"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@id/add_prod_s_name_tv_l"
+	        android:layout_below="@id/add_prod_q_et_v"
+	        android:layout_toEndOf="@id/add_prod_s_name_tv_l"
+			android:layout_alignParentEnd="true"
+			android:layout_toRightOf="@id/add_prod_s_name_tv_l"
+			android:layout_alignParentRight="true"
+			android:hint="@string/some_name"
+	        android:inputType="text" />
+
+    <!-- for the supplier phone -->
+
+    <TextView
+       	style="@style/label_tv_style"
+        android:id="@+id/add_prod_s_phone_tv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+        android:layout_below="@id/add_prod_s_name_tv_l"
+        android:text="@string/supplier_phone_l" />
+
+    <EditText
+        android:id="@+id/add_prod_s_phone_et_v"
+        style="@style/value_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/add_prod_s_phone_tv_l"
+        android:layout_below="@id/add_prod_s_name_et_v"
+        android:layout_toEndOf="@id/add_prod_s_phone_tv_l"
+		android:layout_alignParentEnd="true"
+		android:layout_toRightOf="@id/add_prod_s_phone_tv_l"
+		android:layout_alignParentRight="true"
+		android:hint="@string/sample_phone"
+        android:inputType="phone" />
+    <!-- buttons -->
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btn"
+        android:id="@+id/add_save_btn"
+		android:layout_below="@id/add_prod_s_phone_et_v"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/layout_horizontal_margin"
+        android:padding="@dimen/btn_padding"/>
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_btn"
+        android:id="@+id/add_cancel_btn"
+		android:layout_alignBaseline="@id/add_save_btn"
+        android:layout_margin="@dimen/layout_horizontal_margin"
+        android:layout_toEndOf="@id/add_save_btn"
+        android:layout_toRightOf="@id/add_save_btn"
+        android:padding="@dimen/btn_padding"/>
+</RelativeLayout>
+</ScrollView>

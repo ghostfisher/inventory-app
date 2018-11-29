@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inventory App 2</string>
+    <string name="no_data_msg">You do not have any products yet</string>
+    <string name="no_data_add_item_btn">click here to add a product !</string>
+    <string name="message_image">message image</string>
+    <string name="product_name_l">product name:</string>
+    <string name="price_l">Price:</string>
+	<string name="sale_word">Sale</string>
+    <string name="quantity_l">Quantity: </string>
+    <string name="supplier_name_l">Supplier name:</string>
+    <string name="supplier_phone_l">Supplier phone: </string>
+    <string name="edit_btn">Edit all fields</string>
+    <string name="details_order_btn">Order</string>
+    <string name="delete_btn">Delete</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="some_name">some name</string>
+    <string name="_7">7</string>
+    <string name="sample_phone">0677889900</string>
+    <string name="currency_symbole">$</string>
+    <string name="items_word">items</string>
+    <string name="price">price</string>
+    <string name="invalide_info_msg">please make sure that you have set :\n > a name for your product \n> a price that is more than 0 \n> a quantity that is more than 0 \n > a supplier name \n> supplier phone number</string>
+	<string name="item_saved">Item saved successfully !</string>
+	<string name="item_removed_success_msg">item removed successfully !</string>
+	<string name="item_removed_fail_msg">error removing the item !</string>
+	<string name="calling_app_not_f_msg">no app found to perform the call !</string>
+	<string name="unsaved_changes_dialog_msg">ignore changes and leave ?</string>
+	<string name="cancel_editing">Ignore and leave</string>
+	<string name="keep_editing">Stay here</string>
+	<string name="delete_msg">Are you sure you want to delete </string>
+	<string name="delete_confirm">Delete any way</string>
+	<string name="delete_cancel">Discard</string>
+	<string name="product_sold">Sold successfully</string>
+	<string name="not_enough_products">you are out of this product !</string>
+	<string name="menu_item_delete_all">Delete all products</string>
+	<string name="insert_dumy_prod">insert dummy product </string>
+	<string name="delete_all_dailog_msg">are you sure you want to remove all of your products ?</string>
+	<string name="delete_all_confirm">Yes delete all</string>
+	<string name="delete_all_cancel">@string/delete_cancel</string>
+	<!-- fake values -->
+	<string name="fake_p_name">product X</string>
+	<string name="fake_price">20</string>
+	<string name="fake_quantity">900</string>
+	<string name="fake_s_name">Mr Jack will</string>
+	<string name="fake_s_phone">+34-27377783</string>
+	<!--activitys labels-->
+	<string name="edit_activity_l">Editing:</string>
+	<string name="add_activity_l">Add new product</string>
+	<string name="main_activity_label">Available products</string>
+	<string name="details_activity_l">details</string>
+
+</resources>

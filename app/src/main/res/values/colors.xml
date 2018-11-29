@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ff00</color>
+	<color name="colorAccent">#11aa11</color>
+	<color name="sale_btn_not_clicked">#22ff22</color>
+	<color name="sale_btn_clicked">#11aa11</color>
+</resources>
